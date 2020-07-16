@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="a" value="5" />
+	<parameter name="b" value="3" />
+	<test name="Sum">
+		<classes>
+			<class name="com.pkj.study.TestNGDemos.Sum" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="Subtract">
+	<parameter name="a" value="50" />
+	<parameter name="b" value="3" />
+		<classes>
+			<class name="com.pkj.study.TestNGDemos.Subtract" />
+			<class name="com.pkj.study.TestNGDemos.Multiply" />
+		</classes>
+	</test>
+	<test name="Multiply">
+		<classes>
+			<class name="com.pkj.study.TestNGDemos.Multiply" />
+		</classes>
+	</test>
+</suite> <!-- Suite -->  
